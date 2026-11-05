@@ -110,6 +110,13 @@ onto both boards before using it.
    `TX … ok` only confirms queueing at the sender.
 
 Recording stays in the browser; at most 2,000 log lines are stored.
+The hosted site uses Swetrix for pageview and page-load performance analytics,
+with a private dashboard at https://analytics.kieks.me/ (project `8AEa8EakuUx9`).
+Tracking runs only on `canlab.andrelademann.de` and respects Do Not Track.
+Local development and browser integration tests do not load the tracker.
+USB logs, CAN payloads and device identifiers are never sent to Swetrix;
+session replay and automatic error tracking are not enabled.
+
 “Pause display” only pauses rendering; recording and measurements continue.
 “Clear” removes log lines while keeping measurements. Reloading the page closes
 connections and resets logs and measurements. Counter gaps can also result
