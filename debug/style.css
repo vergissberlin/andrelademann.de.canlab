@@ -58,3 +58,5 @@
 .language-menu button[aria-pressed="true"]{font-weight:700}
 .language-menu button:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:2px}
 @media(max-width:800px){header{height:auto;min-height:75px;flex-wrap:wrap;gap:12px;padding-top:12px;padding-bottom:12px}.language-menu{gap:7px}.log-line{grid-template-columns:82px 72px 1fr}}
+
+.footer-links{display:flex;flex-wrap:wrap;gap:12px 20px}
