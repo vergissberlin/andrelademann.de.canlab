@@ -85,6 +85,9 @@ function refresh() {
   if (globalThis.document) {
     document.documentElement.lang = language.language;
     applyBindings();
+    for (const link of document.querySelectorAll('a[data-href-en][data-href-de]')) {
+      link.setAttribute('href', link.getAttribute(`data-href-${language.language}`));
+    }
     for (const button of document.querySelectorAll('button[data-language]')) {
       button.setAttribute('aria-pressed', String(button.dataset.language === language.preference));
     }
